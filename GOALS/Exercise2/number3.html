@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .hover{
+        text-align: center;
+        font-size: 50px;
+        text-decoration: underline;
+    }
+    body{
+        background-image: url(./contact.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+
+
+
+</style>
+<body>
+    <!-- Write a <div> element which turns red when someone moves the mouse over it. -->
+
+    <div class="hover" id="hoverDiv">Hover over me</div>
+
+    <script>
+        // Getting the div element
+        let divElement = document.getElementById("hoverDiv");
+
+        // Adding event listener for mouse enter
+        divElement.addEventListener("mouseenter", function() {
+            divElement.style.color = "blue";
+        });
+
+        // Adding event listener for mouse leave
+        divElement.addEventListener("mouseleave", function() {
+            divElement.style.color = "red";
+        });
+    </script>
+</body>
+</html>

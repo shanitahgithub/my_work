@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./numericform.css">
+    
+   
+</head>
+<body>
+    <h1>Numeric Input</h1>
+    <form id="numericForm">
+        <label for="numericInput">Enter a number:</label>
+        <input type="text" id="numericInput" name="numericInput">
+        <div id="error" class="error-message"></div>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+      
+      <script>
+      document.getElementById("numericForm").addEventListener("submit", function(event) {
+        var input = document.getElementById("numericInput").value;
+        if (isNaN(input)) {
+          document.getElementById("error").innerHTML = "Enter a valid number.";
+          event.preventDefault();
+        } else {
+          document.getElementById("error").innerHTML = "";
+        }
+      });
+      </script>
+</body>
+</html>

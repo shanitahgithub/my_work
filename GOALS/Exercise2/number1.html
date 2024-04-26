@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url(./contact.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #button{
+        text-align: center;
+        font-size: 40px;align-content: center;
+        color: red;
+    }
+</style>
+<body>
+    <!-- Write a button element, it should do something e.g Alert Jane when someone clicks on it. -->
+
+    <button id="button">Click Me!</button>
+
+
+<script>
+// Getting the button element by its ID
+let button = document.getElementById('button');
+
+// Adding event listener to the button for the 'click' event
+button.addEventListener('click', function() {
+    // Displaying an alert with the message "Jane"
+    alert('Jane');
+});
+</script>
+</body>
+</html>

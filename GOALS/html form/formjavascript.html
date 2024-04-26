@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./form.javascript.css">
+    
+</head>
+<body>
+    <h1>HTML FORM</h1>
+    <form id="myForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+        
+        <input type="submit" value="Submit">
+      </form>
+      
+      <script>
+        // It selects the HTML form element with the ID "myForm".
+// It adds an event listener for the "submit" event, which is triggered when the form is submitted.
+// The second argument to addEventListener is an anonymous function that takes an event parameter.
+// Inside the anonymous function:
+      document.getElementById("myForm").addEventListener("submit", function(event) {
+        // It gets the value entered in the input field with the ID "email" and stores it in the variable email.
+        var name = document.getElementById("name").value;
+        // It gets the value entered in the input field with the ID "name" and stores it in the variable name. 
+        var email = document.getElementById("email").value;
+        // It gets the value entered in the input field with the ID "password" and stores it in the variable password. -->
+        var password = document.getElementById("password").value;
+        // If any of the fields is empty, it displays an alert message saying "Please fill all the values."
+// event.preventDefault(); prevents the form from being submitted if any of the fields is empty. This line stops the default form submission behavior, giving you a chance to handle the submission yourself.
+        
+        if (email === '' || name === '' || password === '') {
+          alert("Please fill all the values.");
+          event.preventDefault();
+        }
+      });
+      </script>
+      
+</body>
+</html>

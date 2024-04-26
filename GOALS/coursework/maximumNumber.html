@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./maximumNumber.css">
+</head>
+<body>
+    
+        <h1>Finding Maximum of Three Numbers</h1>
+    
+        <div class="maximum">
+            
+            <div class="input-group">
+                <label for="num1">Enter the first number:</label>
+                <input type="text" id="num1">
+            </div>
+            <div class="input-group">
+                <label for="num2">Enter the second number:</label>
+                <input type="text" id="num2">
+            </div>
+            <div class="input-group">
+                <label for="num3">Enter the third number:</label>
+                <input type="text" id="num3">
+            </div>
+            <button class="max" onclick="findMax()">Find Maximum</button>
+            <p id="result"></p>
+        </div>
+    <script>
+    function findMax() {
+      
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+        let num3 = parseFloat(document.getElementById("num3").value);
+    
+       
+        if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+            document.getElementById("result").innerText = "Please enter valid numbers.";
+            return;
+        }
+    
+       
+        let max = Math.max(num1, num2, num3);
+    
+       
+        document.getElementById("result").innerText ="The maximum of the three numbers is: " + max;
+    }
+    </script>
+    
+    {
+        "first_name":"Nakagga",
+        "last_name":"Shanitah",
+        "email":"nakaggashanitah874@gmail.com",
+        "password":"123567",
+        "image":"image.jpeg",
+        "user_type":"author",
+        "biography":"I am Shanitah",
+        "contact":"form4@2018"
+    }
+    
+    
+</body>
+</html>

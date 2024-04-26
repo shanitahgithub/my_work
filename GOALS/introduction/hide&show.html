@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Buttons -->
+    <button onclick="showme()">Show me</button>
+    <button onclick="hideme()">Hide me</button>
+    <p>JavaScript to hide and show HTML elements.</p>
+
+<p id="test" style="display:none">Welcome to Javscript!</p>
+<p id="text" style="display: contents;">Thank you!</p>
+
+<script>
+
+function showme() {
+        document.getElementById("test").style.display='block';
+    }
+    function  hideme(){
+        document.getElementById("text").style.display='none';
+    }
+    
+</script>
+
+</body>
+</html>
